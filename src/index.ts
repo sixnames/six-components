@@ -1,1 +1,1 @@
-export const helloSix = 'six names components'
+export * from './lib/fieldLabels';
