@@ -2,6 +2,10 @@
   "name": "six-components",
   "version": "0.1.3",
   "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean --external react",
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts --external react"
+  },
   "description": "do not use this package, it is for testing purposes only",
   "publishConfig": {
     "access": "public"
@@ -18,10 +22,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sixnames/six-components"
-  },
-  "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --minify --clean --external react",
-    "dev": "tsup src/index.ts --format cjs,esm --watch --dts --external react"
   },
   "peerDependencies": {
     "react": ">=18",
