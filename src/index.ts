@@ -1,1 +1,1 @@
-export const hello = 'world'
+export const helloSix = 'six names components'
